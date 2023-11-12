@@ -1,0 +1,38 @@
+.navContainer {
+  background-color: white;
+  display: flex;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navIconContainer {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.navIcon {
+  width: 25px;
+  opacity: 0.5;
+}
+.active img {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .navContainer {
+    bottom: 0;
+    top: unset;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .navIconContainer {
+    width: 100vw;
+    justify-content: space-around;
+  }
+}

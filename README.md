@@ -1,0 +1,22 @@
+### Tasklist
+
+- [x] Page skeletons
+  - [x] Dash
+  - [x] Upload
+  - [x] Auth
+- [ ] Navbar
+  - [x] Skeleton
+  - [ ] Routing
+  - [x] Responsiveness
+- [ ] Dash
+  - [ ] Responsive card layout
+  - [ ] Card1
+  - [ ] Card2
+  - [ ] Card3
+  - [ ] Card4
+  - [ ] Bonus feature
+- [ ] Image Upload
+- [ ] Notifications
+- [ ] Auth
+  - [ ] Login
+  - [ ] Signup
