@@ -1,3 +1,8 @@
+.navNotificationGhostContainer {
+  display: flex;
+  justify-content: end;
+}
+
 .navContainer {
   background-color: white;
   display: flex;
@@ -24,6 +29,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .navNotificationGhostContainer {
+    position: absolute;
+  }
   .navContainer {
     bottom: 0;
     top: unset;

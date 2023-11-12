@@ -3,6 +3,10 @@ import "./dash.css";
 import Branding from "assets/Branding.svg";
 import TopTagsCard from "components/cards/topTags/topTags";
 import ImagesByDayCard from "components/cards/imagesByDay/imagesByDay";
+import BellIcon from "components/bellIcon/bellIcon";
+import NotificationsTray from "components/notificationsTray/notificationsTray";
+import { useContext, useState } from "react";
+import { NotificationContext } from "MainRoutes";
 
 const Dash = () => {
   const topTagsData = {
@@ -18,9 +22,21 @@ const Dash = () => {
     ],
   };
 
+  const notificationContext = useContext(NotificationContext);
+
   return (
     <div className="dashContainer">
-      <img src={Branding} className="hide-desktop" />
+      <div className="hide-desktop dashHeader">
+        <img src={Branding} />
+        <BellIcon
+          count={25}
+          onClick={() => {
+            notificationContext.setShowNotifications(
+              !notificationContext.showNotifications
+            );
+          }}
+        />
+      </div>
       <div className="cardsContainer">
         <CountCard count={125} percent={12} />
         <TopTagsCard data={topTagsData} />

@@ -16,11 +16,14 @@
   - [ ] Todo
   - [ ] Performance - text
     > https://react-chartjs-2.js.org/examples/
-- [ ] Image Upload
+- [x] Image Upload
   - [x] upload prompt
-  - [ ] image preview
-  - [ ] annotation inputs
+  - [x] image preview
+  - [x] annotation inputs
+  - [ ] add more feature inputs
 - [ ] Notifications
+  - [x] create bell with counter
+  - [ ] create modal for notification display
 - [ ] Auth
   - [ ] Login
   - [ ] Signup

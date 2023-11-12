@@ -27,7 +27,7 @@ const Upload = () => {
         <div className="uploadPromptContainer card">
           <img src={uploadIcon} alt="uploadImage Icon" className="uploadIcon" />
           <p className="uploadPromptText">Upload an image to annotate</p>
-          <label for="file-upload" class="uploadButton">
+          <label htmlFor="file-upload" class="uploadButton">
             Upload
           </label>
           <input id="file-upload" type="file" onChange={loadFile} />

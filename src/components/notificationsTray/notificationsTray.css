@@ -1,0 +1,64 @@
+.notificationsContainer {
+  z-index: 2;
+  position: relative;
+  max-height: 50vh;
+  overflow: auto;
+  padding: 5px 0;
+  max-width: 50vw;
+}
+
+.ghostNotificationTray {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+}
+
+.notificationsTitle {
+  color: #4d4d4d;
+  font-family: Raleway;
+  font-size: 25px;
+  font-weight: 900;
+  padding: 0 15px;
+}
+
+.notification {
+  padding: 0 15px;
+  font-family: Poppins;
+}
+
+.notification h3 {
+  color: #4e4e4e;
+  font-size: 20px;
+  font-weight: 600;
+}
+.notification p {
+  color: #7e7e7e;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #efefef;
+  margin: 1em 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+  .notificationsContainer {
+    top: 100px;
+    width: 90vw;
+    left: 95vw;
+    max-width: unset;
+  }
+  .ghostNotificationTray {
+    pointer-events: unset;
+    top: unset;
+    right: unset;
+  }
+}

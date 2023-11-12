@@ -3,9 +3,14 @@
 }
 
 .hide-desktop {
-  display: none;
+  display: none !important;
 }
 
+.dashHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -17,7 +22,7 @@
     padding: 50px 10px;
   }
   .hide-desktop {
-    display: unset;
+    display: flex !important;
   }
   .cardsContainer {
     padding: 20px 0;

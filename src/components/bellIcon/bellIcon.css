@@ -1,0 +1,41 @@
+.bellContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  cursor: pointer;
+}
+
+.numberCircle {
+  width: 16px;
+  line-height: 16px;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid #a4a4a4;
+  font: 10px Poppins;
+  background: white;
+  position: relative;
+  top: 10px;
+  left: 9px;
+  z-index: 1;
+  font-weight: 600;
+}
+
+.bellIcon {
+  position: relative;
+  top: -11px;
+  width: 25px;
+  opacity: 1;
+  color: #a4a4a4;
+}
+
+@media only screen and (max-width: 768px) {
+  .bellIcon {
+    color: #4e77f2;
+  }
+  .numberCircle {
+    border: 2px solid #4e77f2;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
