@@ -10,7 +10,7 @@
   - [x] Responsiveness
 - [ ] Dash
   - [ ] Responsive card layout
-  - [ ] Card1
+  - [x] Card1
   - [ ] Card2
   - [ ] Card3
   - [ ] Card4

@@ -1,0 +1,14 @@
+.topTagsContainer {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 900;
+  margin: 10px 0;
+  color: #282828;
+}
