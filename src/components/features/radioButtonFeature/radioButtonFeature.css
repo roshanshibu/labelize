@@ -1,0 +1,10 @@
+.radioButtonsContainer {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radioButtonsContainer label {
+  cursor: pointer;
+}

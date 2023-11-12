@@ -1,7 +1,5 @@
 .uploadContainer {
   display: flex;
-  height: 80vh;
-  width: 100vw;
   justify-content: center;
   align-items: center;
 }
@@ -9,14 +7,11 @@
 .uploadPromptContainer {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-  border: 2px solid #f4f4f4;
-  background: #fff;
-  box-shadow: 0px 4px 9px 0px #d9e2ff;
   width: 70%;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  margin-top: 100px;
 }
 
 .uploadIcon {
@@ -50,8 +45,89 @@
   cursor: pointer;
 }
 
+.previewAnnotationsContainer {
+  display: flex;
+  width: 100%;
+  margin: 100px 20px 0px 20px;
+  gap: 20px;
+  max-height: 80vh;
+}
+
+.previewContainer {
+  flex: 1;
+  height: fit-content;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  font-family: Raleway;
+  font-weight: 600;
+}
+.uploadPreview {
+  width: 100%;
+  max-width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.filename {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.annotationsContainer {
+  flex: 3;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.annotationsTitle {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.featuresContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.featuresContainer > div {
+  border-bottom: 2px solid #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   .uploadPromptContainer {
     width: 90%;
+  }
+  .previewAnnotationsContainer {
+    flex-direction: column;
+    margin: 10px 10px;
+  }
+  .previewContainer {
+    margin: 0;
+    justify-content: flex-start;
+    padding: 10px;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .uploadPreview {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .annotationsContainer {
+    padding: 0 10px;
+  }
+  .featuresContainer {
+    display: block;
   }
 }
