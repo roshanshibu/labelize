@@ -1,0 +1,5 @@
+.imagesByDayContainer {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+}

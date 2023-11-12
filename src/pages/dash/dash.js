@@ -2,6 +2,7 @@ import CountCard from "components/cards/count/count";
 import "./dash.css";
 import Branding from "assets/Branding.svg";
 import TopTagsCard from "components/cards/topTags/topTags";
+import ImagesByDayCard from "components/cards/imagesByDay/imagesByDay";
 
 const Dash = () => {
   const topTagsData = {
@@ -23,6 +24,7 @@ const Dash = () => {
       <div className="cardsContainer">
         <CountCard count={125} percent={12} />
         <TopTagsCard data={topTagsData} />
+        <ImagesByDayCard data={topTagsData} />
       </div>
     </div>
   );
