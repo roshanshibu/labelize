@@ -1,0 +1,25 @@
+.dashContainer {
+  padding: 100px 30px;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .dashContainer {
+    padding: 50px 10px;
+  }
+  .hide-desktop {
+    display: unset;
+  }
+  .cardsContainer {
+    padding: 20px 0;
+  }
+}
