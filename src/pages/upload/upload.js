@@ -57,6 +57,7 @@ const Upload = () => {
                 description="Small description about feature1 hereSmall description about feature1 hereSmall description about feature1 here"
               />
             </div>
+            <p class="uploadButton">Submit</p>
           </div>
         </div>
       )}
