@@ -10,12 +10,16 @@
   - [x] Responsiveness
 - [ ] Dash
   - [ ] Responsive card layout
-  - [x] Card1
-  - [ ] Card2
-  - [ ] Card3
-  - [ ] Card4
-  - [ ] Bonus feature
+  - [x] TopTags
+  - [x] ImagesByDay
+  - [ ] Accuracy - Pie
+  - [ ] Todo
+  - [ ] Performance - text
+    > https://react-chartjs-2.js.org/examples/
 - [ ] Image Upload
+  - [x] upload prompt
+  - [ ] image preview
+  - [ ] annotation inputs
 - [ ] Notifications
 - [ ] Auth
   - [ ] Login
