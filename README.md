@@ -15,6 +15,9 @@ Use username `user@mail.com` and password `password` to login as test user.
 
 - Dashboard can be customized by the user from the Profile page.
 - The project is deployed as an installable PWA.
+- Authentication is mocked by storing a JWT token. Application paths are protected from unauthenticated users.
+- All assets used in the project are original/copyright free.
+
 <hr>
 
 ### Tasklist
@@ -35,7 +38,7 @@ Use username `user@mail.com` and password `password` to login as test user.
   - [x] Todo
   - [x] Performance - text
   - [x] Customize dash - select cards
-- [ ] Image Upload
+- [x] Image Upload
   - [x] upload prompt
   - [x] image preview
   - [x] annotation inputs
