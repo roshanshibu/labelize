@@ -5,7 +5,8 @@ Deployed at [labelize.roshanshibu.com](labelize.roshanshibu.com)
 
 ### Build Instructions
 
-Inside root, run `npm run start`
+1. Update packages with `npm install`
+2. Build and run with `npm run start`
 
 ### Test Credentials
 
