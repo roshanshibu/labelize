@@ -91,6 +91,11 @@
   margin-bottom: 10px;
 }
 
+.finalUploadButton {
+  line-height: 0;
+  width: 100%;
+}
+
 @media only screen and (max-width: 768px) {
   .uploadPromptContainer {
     width: 90%;

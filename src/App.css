@@ -88,3 +88,9 @@ html {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+@media only screen and (max-width: 768px) {
+  .customChecklist .checkmark {
+    background-color: #ccc;
+  }
+}

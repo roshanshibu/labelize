@@ -19,7 +19,7 @@ const Profile = () => {
     dashCardContext.setDashCards((previousArray) => {
       return previousArray.map((item) => {
         if (item.label === label) {
-          // Switch the 'enabled' value for the object with label 'Top Tags'
+          // Switch the 'checked' value for the matching object
           return { ...item, checked: !item.checked };
         }
         return item;
@@ -46,7 +46,7 @@ const Profile = () => {
       </div>
       <div className="settingsContainer">
         <div className="dashboardCardsSettings customChecklist card">
-          <h1 className="settingsCardTitle">Dashboard Cards</h1>
+          <h1 className="settingsCardTitle">Customize Dashboard</h1>
           {dashCardContext.dashCards.map((dashCardName, index) => (
             <label class="container">
               {dashCardName.label}
