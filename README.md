@@ -8,13 +8,13 @@
   - [x] Skeleton
   - [x] Routing
   - [x] Responsiveness
-- [ ] Dash
-  - [ ] Responsive card layout
+- [x] Dash
+  - [x] Responsive card layout
   - [x] TopTags
   - [x] ImagesByDay
-  - [ ] Accuracy - Pie
-  - [ ] Todo
-  - [ ] Performance - text
+  - [x] Accuracy - Pie
+  - [x] Todo
+  - [x] Performance - text
     > https://react-chartjs-2.js.org/examples/
 - [ ] Image Upload
   - [x] upload prompt
