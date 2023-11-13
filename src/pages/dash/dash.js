@@ -6,7 +6,7 @@ import ImagesByDayCard from "components/cards/imagesByDay/imagesByDay";
 import BellIcon from "components/bellIcon/bellIcon";
 import NotificationsTray from "components/notificationsTray/notificationsTray";
 import { useContext, useState } from "react";
-import { NotificationContext } from "MainRoutes";
+import { DashCardsContext, NotificationContext } from "MainRoutes";
 
 const Dash = () => {
   const topTagsData = {
@@ -23,13 +23,14 @@ const Dash = () => {
   };
 
   const notificationContext = useContext(NotificationContext);
+  const dashCardContext = useContext(DashCardsContext);
 
   return (
     <div className="dashContainer">
       <div className="hide-desktop dashHeader">
         <img src={Branding} />
         <BellIcon
-          count={25}
+          count={10}
           onClick={() => {
             notificationContext.setShowNotifications(
               !notificationContext.showNotifications
@@ -38,9 +39,20 @@ const Dash = () => {
         />
       </div>
       <div className="cardsContainer">
-        <CountCard count={125} percent={12} />
-        <TopTagsCard data={topTagsData} />
-        <ImagesByDayCard data={topTagsData} />
+        {dashCardContext.dashCards
+          .filter((dashCard) => dashCard.checked)
+          .map((dashCardName, index) => {
+            switch (dashCardName.label) {
+              case "Images Annotated Today":
+                return <CountCard count={125} percent={12} />;
+              case "Top Tags":
+                return <TopTagsCard data={topTagsData} />;
+              case "Images by day":
+                return <ImagesByDayCard data={topTagsData} />;
+              default:
+                return <p>{dashCardName.label}</p>;
+            }
+          })}
       </div>
     </div>
   );

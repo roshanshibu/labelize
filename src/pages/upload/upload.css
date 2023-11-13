@@ -29,22 +29,6 @@
   display: none;
 }
 
-.uploadButton {
-  border-radius: 12px;
-  border: 2px solid #b9cafe;
-  background: #4e77f2;
-  box-shadow: 0px 4px 9px 0px #d9e2ff;
-  padding: 10px 45px;
-  color: #fff;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  cursor: pointer;
-}
-
 .previewAnnotationsContainer {
   display: flex;
   width: 100%;
@@ -63,6 +47,7 @@
   flex-direction: column;
   font-family: Raleway;
   font-weight: 600;
+  max-width: 360px;
 }
 .uploadPreview {
   width: 100%;
@@ -74,6 +59,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  width: -webkit-fill-available;
 }
 
 .annotationsContainer {

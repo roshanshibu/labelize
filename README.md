@@ -4,9 +4,9 @@
   - [x] Dash
   - [x] Upload
   - [x] Auth
-- [ ] Navbar
+- [x] Navbar
   - [x] Skeleton
-  - [ ] Routing
+  - [x] Routing
   - [x] Responsiveness
 - [ ] Dash
   - [ ] Responsive card layout
@@ -16,14 +16,18 @@
   - [ ] Todo
   - [ ] Performance - text
     > https://react-chartjs-2.js.org/examples/
-- [x] Image Upload
+- [ ] Image Upload
   - [x] upload prompt
   - [x] image preview
   - [x] annotation inputs
   - [ ] add more feature inputs
-- [ ] Notifications
+  - [ ] Allow only images, check by file extension
+- [x] Notifications
   - [x] create bell with counter
-  - [ ] create modal for notification display
+  - [x] create modal for notification display
 - [ ] Auth
   - [ ] Login
   - [ ] Signup
+- [ ] User Profile
+  - [ ] Edit username
+  - [ ] Edit visible dash cards

@@ -34,7 +34,7 @@ const Navbar = () => {
             <NavIcon icon={i_image} />
           </NavLink>
           <BellIcon
-            count={25}
+            count={10}
             hideMobile={true}
             onClick={() => {
               notificationContext.setShowNotifications(
