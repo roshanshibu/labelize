@@ -10,9 +10,17 @@ import Loading from "assets/loading.svg";
 const Upload = () => {
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState(null);
+  const [showImageWarning, setShowImageWarning] = useState(false);
   function loadFile(e) {
-    setFile(URL.createObjectURL(e.target.files[0]));
-    setFileName(e.target.files[0]["name"]);
+    const userFile = e.target.files[0];
+
+    if (userFile && userFile.type.startsWith("image/")) {
+      setFile(URL.createObjectURL(userFile));
+      setFileName(userFile["name"]);
+      setShowImageWarning(false);
+    } else {
+      setShowImageWarning(true);
+    }
   }
 
   // for feature annotation with radio button options
@@ -51,6 +59,11 @@ const Upload = () => {
               className="uploadIcon"
             />
             <p className="uploadPromptText">Upload an image to annotate</p>
+            {showImageWarning && (
+              <p className="imageOnlyWarning">
+                Please choose a valid image file
+              </p>
+            )}
             <label htmlFor="file-upload" class="blueButton">
               Upload
             </label>

@@ -40,7 +40,7 @@ Use username `user@mail.com` and password `password` to login as test user.
   - [x] image preview
   - [x] annotation inputs
   - [x] add more feature inputs
-  - [ ] Allow only images, check by file extension
+  - [x] Allow only images, check by file extension
 - [x] Notifications
   - [x] create bell with counter
   - [x] create modal for notification display
@@ -50,6 +50,6 @@ Use username `user@mail.com` and password `password` to login as test user.
 - [x] User Profile
   - [x] Edit username
   - [x] Edit visible dash cards
-- [ ] Cleanup
-  - [ ] change project icons
+- [x] Cleanup
+  - [x] change project icons
   - [x] complete documentation
