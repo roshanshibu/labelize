@@ -48,6 +48,7 @@ const Authentication = () => {
     setTimeout(() => {
       setIsLoading(false);
       if (email === "user@mail.com" && password === "password") {
+        // if authenticated, simulate storing a JWT and go to dash page
         localStorage.setItem("LabelizeMockJWT", "true");
         navigate("/");
       } else {

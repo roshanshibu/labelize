@@ -47,6 +47,7 @@ const Navbar = () => {
           </NavLink>
         </div>
       </div>
+      {/* The bell icons in desktop and mobile are different elements, but they share a common NotificationsTray component */}
       <NotificationsTray
         hideMobile={true}
         showNotifications={notificationContext.showNotifications}

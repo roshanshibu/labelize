@@ -1,5 +1,8 @@
 import "../dashCard.css";
 import "./imagesByDay.css";
+
+// Shows a line graph displaying how many images were annotated by the user throughout the week
+
 import {
   Chart as ChartJS,
   CategoryScale,

@@ -1,6 +1,9 @@
 import "../dashCard.css";
 import "./performance.css";
 import upArrow from "assets/upArrow.svg";
+
+// an info card that shows a percentage increase or decrease(TODO) in the number of images annotated this week
+
 const PerformanceCard = (props) => {
   return (
     <div className="dashCard">

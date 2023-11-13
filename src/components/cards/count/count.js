@@ -1,6 +1,8 @@
 import "../dashCard.css";
 import "./count.css";
 
+// Info card that shows the number of images annotated by the user today
+
 const CountCard = (props) => {
   return (
     <div className="dashCard">

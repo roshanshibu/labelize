@@ -1,6 +1,7 @@
 # Labelize
 
-A PWA client for a manual image annotation system.
+A PWA client for an image annotation system.  
+Deployed at [labelize.roshanshibu.com](labelize.roshanshibu.com)
 
 ### Build Instructions
 
@@ -33,6 +34,7 @@ Use username `user@mail.com` and password `password` to login as test user.
   - [x] Accuracy - Pie
   - [x] Todo
   - [x] Performance - text
+  - [x] Customize dash - select cards
 - [ ] Image Upload
   - [x] upload prompt
   - [x] image preview
@@ -50,4 +52,4 @@ Use username `user@mail.com` and password `password` to login as test user.
   - [x] Edit visible dash cards
 - [ ] Cleanup
   - [ ] change project icons
-  - [ ] complete documentation
+  - [x] complete documentation

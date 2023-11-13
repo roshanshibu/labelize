@@ -1,6 +1,8 @@
 import "../dashCard.css";
 import "./todo.css";
 
+// a simple todo card
+
 const todoList = [
   "Email Dianne about latest dataset",
   "Update Confluence page with new procedure",

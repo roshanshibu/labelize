@@ -18,7 +18,7 @@ function MainRoutes() {
     { label: "Images by day", checked: true },
     { label: "Annotation Accuracy", checked: true },
     { label: "Todo (mandatory)", checked: true },
-    { label: "Comparison with last week", checked: true },
+    { label: "Performance", checked: true },
   ]);
   return (
     <>

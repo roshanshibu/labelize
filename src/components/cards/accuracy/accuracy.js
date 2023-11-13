@@ -3,6 +3,8 @@ import "./accuracy.css";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 
+// A card that displays a pie chart showing a ratio
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const options = {

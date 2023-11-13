@@ -4,7 +4,6 @@ import Branding from "assets/Branding.svg";
 import TopTagsCard from "components/cards/topTags/topTags";
 import ImagesByDayCard from "components/cards/imagesByDay/imagesByDay";
 import BellIcon from "components/bellIcon/bellIcon";
-import NotificationsTray from "components/notificationsTray/notificationsTray";
 import { useContext, useState } from "react";
 import { DashCardsContext, NotificationContext } from "MainRoutes";
 import AnnotationAccuracy from "components/cards/accuracy/accuracy";
@@ -13,6 +12,7 @@ import ToDoCard from "components/cards/todo/todo";
 
 const Dash = () => {
   const topTagsData = {
+    // data for the top tags bar chart
     labels: ["Dog", "Cat", "Buildings", "Bikes"],
     datasets: [
       {
@@ -56,7 +56,7 @@ const Dash = () => {
                 return <AnnotationAccuracy />;
               case "Todo (mandatory)":
                 return <ToDoCard />;
-              case "Comparison with last week":
+              case "Performance":
                 return <PerformanceCard />;
             }
           })}

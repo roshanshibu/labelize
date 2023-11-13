@@ -9,6 +9,8 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 
+// a card that contains a bar graph showing some information regarding the most tagged labels by the user
+
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip);
 
 const options = {
