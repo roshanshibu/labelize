@@ -5,6 +5,7 @@ import Upload from "./pages/upload/upload";
 import ErrorPage from "./pages/errorPage/errorPage";
 import Profile from "pages/profile/profile";
 import React, { useState } from "react";
+import AuthRoute from "AuthRoute";
 
 export const NotificationContext = React.createContext();
 export const DashCardsContext = React.createContext();
@@ -27,9 +28,30 @@ function MainRoutes() {
         <DashCardsContext.Provider value={{ dashCards, setDashCards }}>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Dash />} />
-            <Route path="/upload" element={<Upload />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route
+              path="/"
+              element={
+                <AuthRoute>
+                  <Dash />
+                </AuthRoute>
+              }
+            />
+            <Route
+              path="/upload"
+              element={
+                <AuthRoute>
+                  <Upload />
+                </AuthRoute>
+              }
+            />
+            <Route
+              path="/profile"
+              element={
+                <AuthRoute>
+                  <Profile />
+                </AuthRoute>
+              }
+            />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         </DashCardsContext.Provider>

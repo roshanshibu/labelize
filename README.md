@@ -25,9 +25,12 @@
 - [x] Notifications
   - [x] create bell with counter
   - [x] create modal for notification display
-- [ ] Auth
-  - [ ] Login
-  - [ ] Signup
+- [x] Auth
+  - [x] Login
+  - [x] Signup
 - [x] User Profile
   - [x] Edit username
   - [x] Edit visible dash cards
+- [ ] Cleanup
+  - [ ] change project icons
+  - [ ] complete documentation

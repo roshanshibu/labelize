@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import "./profile.css";
 import i_avatar from "assets/avatar.png";
 import { DashCardsContext } from "MainRoutes";
+import { useNavigate } from "react-router-dom";
 
 const user = {
   firstName: "John",
@@ -24,6 +25,12 @@ const Profile = () => {
         return item;
       });
     });
+  };
+
+  const navigate = useNavigate();
+  const handleSignOut = (e) => {
+    localStorage.removeItem("LabelizeMockJWT");
+    navigate("/auth");
   };
 
   return (
@@ -75,6 +82,9 @@ const Profile = () => {
           <p class="blueButton">Update</p>
         </div>
       </div>
+      <button type="submit" className="signOutButton" onClick={handleSignOut}>
+        Sign Out
+      </button>
     </div>
   );
 };
