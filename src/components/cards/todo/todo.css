@@ -1,0 +1,13 @@
+.todoCardContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.customChecklist .container {
+  font-size: 16px !important;
+}
+@media only screen and (max-width: 768px) {
+  .todoCardContainer {
+    width: 100%;
+  }
+}

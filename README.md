@@ -28,6 +28,6 @@
 - [ ] Auth
   - [ ] Login
   - [ ] Signup
-- [ ] User Profile
-  - [ ] Edit username
-  - [ ] Edit visible dash cards
+- [x] User Profile
+  - [x] Edit username
+  - [x] Edit visible dash cards

@@ -7,6 +7,9 @@ import BellIcon from "components/bellIcon/bellIcon";
 import NotificationsTray from "components/notificationsTray/notificationsTray";
 import { useContext, useState } from "react";
 import { DashCardsContext, NotificationContext } from "MainRoutes";
+import AnnotationAccuracy from "components/cards/accuracy/accuracy";
+import PerformanceCard from "components/cards/performance/performance";
+import ToDoCard from "components/cards/todo/todo";
 
 const Dash = () => {
   const topTagsData = {
@@ -49,8 +52,12 @@ const Dash = () => {
                 return <TopTagsCard data={topTagsData} />;
               case "Images by day":
                 return <ImagesByDayCard data={topTagsData} />;
-              default:
-                return <p>{dashCardName.label}</p>;
+              case "Annotation Accuracy":
+                return <AnnotationAccuracy />;
+              case "Todo (mandatory)":
+                return <ToDoCard />;
+              case "Comparison with last week":
+                return <PerformanceCard />;
             }
           })}
       </div>

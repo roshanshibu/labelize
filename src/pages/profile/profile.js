@@ -38,7 +38,7 @@ const Profile = () => {
         </div>
       </div>
       <div className="settingsContainer">
-        <div className="dashboardCardsSettings card">
+        <div className="dashboardCardsSettings customChecklist card">
           <h1 className="settingsCardTitle">Dashboard Cards</h1>
           {dashCardContext.dashCards.map((dashCardName, index) => (
             <label class="container">

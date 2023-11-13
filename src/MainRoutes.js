@@ -12,12 +12,12 @@ export const DashCardsContext = React.createContext();
 function MainRoutes() {
   const [showNotifications, setShowNotifications] = useState(false);
   const [dashCards, setDashCards] = useState([
-    { label: "Images Annotated Today", checked: false },
-    { label: "Top Tags", checked: false },
-    { label: "Images by day", checked: false },
-    { label: "Annotation Accuracy", checked: false },
+    { label: "Images Annotated Today", checked: true },
+    { label: "Top Tags", checked: true },
+    { label: "Images by day", checked: true },
+    { label: "Annotation Accuracy", checked: true },
     { label: "Todo (mandatory)", checked: true },
-    { label: "Comparison with last week", checked: false },
+    { label: "Comparison with last week", checked: true },
   ]);
   return (
     <>

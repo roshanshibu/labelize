@@ -1,0 +1,33 @@
+.performanceCardContainer {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  line-height: 0.5;
+  justify-content: space-evenly;
+}
+
+.performanceStat {
+  display: flex;
+  font-size: 35px;
+  color: #4ccc1e;
+  font-weight: 600;
+  gap: 5px;
+  align-items: center;
+  line-height: 0;
+}
+
+.performanceStat2 {
+  color: #737373;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+.performanceStat3 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.performanceStat img {
+  width: 26px;
+}

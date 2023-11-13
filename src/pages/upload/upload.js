@@ -15,7 +15,7 @@ const Upload = () => {
   }
 
   // for feature with radio button options
-  const featureOptions = ["Option 1", "Option 2", "Option 3"];
+  const featureOptions = ["Happy", "Indifferent", "Sad"];
   const [selectedOption, setSelectedOption] = useState(featureOptions[0]);
   const handleFeatureOptionChange = (option) => {
     setSelectedOption(option);
@@ -42,19 +42,19 @@ const Upload = () => {
             <p className="annotationsTitle">Feature Annotations</p>
             <div className="featuresContainer">
               <TextFeature
-                title="Feature 1"
-                description="Small description about feature1 hereSmall description about feature1 hereSmall description about feature1 here"
+                title="Contextual Information"
+                description="This includes relationships between objects, spatial arrangement, and the overall scene context."
               />
               <RadioButtonFeature
-                title="Feature2"
-                description="small desc here"
+                title="Emotions or Sentiments"
+                description="Select the emotions or sentiments portrayed by human faces or expressions in an image."
                 options={featureOptions}
                 selectedOption={selectedOption}
                 onOptionChange={handleFeatureOptionChange}
               />
               <DateFeature
-                title="Feature 3"
-                description="Small description about feature1 hereSmall description about feature1 hereSmall description about feature1 here"
+                title="Age or Time Period"
+                description="Select the most accurate date relevant to the image to the best of your understanding"
               />
             </div>
             <p class="blueButton">Submit</p>
