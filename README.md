@@ -1,7 +1,7 @@
 # Labelize
 
 A PWA client for an image annotation system.  
-Deployed at [labelize.roshanshibu.com](labelize.roshanshibu.com)
+Deployed at [labelize.roshanshibu.com](https://labelize.roshanshibu.com)
 
 ### Build Instructions
 
