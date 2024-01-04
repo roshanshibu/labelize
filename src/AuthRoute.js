@@ -7,10 +7,11 @@ const AuthRoute = ({ children }) => {
   const navigate = useNavigate();
   useEffect(() => {
     const loggedIn = localStorage.getItem("LabelizeMockJWT");
-    if (!loggedIn) {
-      // Redirect to the login page
-      navigate("/auth");
-    }
+    // ignore auth - show everyone the page
+    // if (!loggedIn) {
+    //   // Redirect to the login page
+    //   navigate("/auth");
+    // }
   }, [navigate]);
 
   return children;

@@ -5,8 +5,8 @@ import { DashCardsContext } from "MainRoutes";
 import { useNavigate } from "react-router-dom";
 
 const user = {
-  firstName: "John",
-  lastName: "Smith",
+  firstName: "Demo",
+  lastName: "User",
 };
 const Profile = () => {
   const dashCardContext = useContext(DashCardsContext);
